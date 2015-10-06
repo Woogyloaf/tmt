@@ -1,0 +1,809 @@
+/*Fonts: 
+        Open-sans  
+        Pacifico-regular
+        FB-icons  
+*/
+$red = #d00b01;
+$black = #313131;
+$silver = #d1d1d1;
+
+$opensans = 'Open Sans', sans-serif;
+$arial = Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+@import '../images/sprite.css';
+@font-face
+  font-family: Pacifico-regular
+  src: url(../css/fonts/Pacifico.ttf)
+
+
+*
+  outline: none
+*
+  margin 0px
+  padding 0px
+
+body
+  border-top 5px solid $red
+  overflow-x: hidden
+header
+  width 1170px
+  height 144px
+  margin 0 auto
+.logo
+  position relative
+  width 285px
+  height 65px
+  float left
+  
+.jessicawhite
+  font-family Pacifico-regular
+  font-size 48px
+  
+.logo > .jessicawhite > span
+  color $red
+
+.logo > .professional
+  bottom 17px;
+  font-size 10px
+  font-family $opensans
+  color #adadad
+  position absolute
+  top 70px
+  left 44px
+  text-transform uppercase
+  letter-spacing: 1.5px;
+.hd-right
+  float right
+  
+.social-top
+  // width 170px
+  margin-top 39px
+  height 30px
+  float right
+  display inline-block
+.social-top > div
+  display inline-block
+  background $silver
+  border-radius 50%
+  width 30px
+  height 30px
+  margin-right 1px
+  &:hover
+    background #d00b01
+.social-top .facebook svg,
+.social-top .vimeo svg,
+.social-top .thumbler svg, 
+.social-top .twitter svg,
+.social-top .delicious svg
+  fill #fff
+  &:hover
+    fill #fff
+
+.social-top .facebook a
+  margin-left 11px
+  line-height 34px
+.social-top .vimeo a
+  margin-left 8px
+  line-height 34px
+.social-top .thumbler a
+  margin-left 8px
+  line-height 34px
+.social-top .twitter a
+  margin-left 5px
+  line-height 34px
+.social-top .delicious a
+  margin-left 8px
+  line-height 34px
+
+// .social-top .facebook a
+//   margin-left 11px
+//   margin-top 8px
+// .social-top .vimeo a
+//   margin-left 8px
+//   margin-top 9px
+// .social-top .thumbler a
+//   margin-left 8px
+//   margin-top 7px
+// .social-top .twitter a
+//   margin-left 6px
+//   margin-top 8px
+// .social-top .delicious a
+//   margin-left 8px
+//   margin-top 8px
+nav
+  clear both
+  float right
+  display inline-block
+  margin-top 20px
+nav > .active
+  color $red
+nav > a
+  font-size 14px
+  font-family $opensans
+  text-transform uppercase
+  font-weight 800
+  margin-right 10px
+  color $black
+  text-decoration none
+  &:hover
+    color #c5c5c5
+nav a:last-child
+    margin-right 0px
+
+.slider
+  background #607a89
+  width 1920px
+  min-width 1920px
+  height 689px
+  margin 0 auto
+.slider img
+  margin 0px
+  padding 0px
+.slider .slick-next
+  top 350px
+  right 288px
+  
+.slider .slick-prev
+  z-index 99
+  top 350px
+  left 298px
+.slider .slick-prev:before,
+.slider .slick-next:before
+  background none
+.slider .slick-prev
+  background transparent
+  background-image: url(../images/sprite.png);
+  background-position: 0px -39px
+  width: 25px
+  height: 44px
+  &:hover
+    background transparent
+    background-image: url(../images/sprite.png);
+    background-position: 0px -39px
+    width: 25px
+    height: 44px
+.slider .slick-next
+  background transparent
+  background-image: url(../images/sprite.png);
+  background-position: -25px -39px;
+  width: 25px;
+  height: 44px;
+  &:hover
+    background transparent
+    background-image: url(../images/sprite.png);
+    background-position: -25px -39px;
+    width: 25px;
+    height: 44px;
+  
+.slider .slick-prev:hover,
+.slider .slick-prev:focus,
+.slider .slick-next:hover,
+.slider .slick-next:focus
+  background solid
+  
+
+
+.polite
+  z-index 1
+
+.dunno
+  width 1130px
+  text-align center
+  overflow hidden
+  margin 70px  auto 0 auto
+.dunno-block
+  width 230px
+  float left
+  margin-right 70px
+  &:last-child
+    margin-right 0px
+.dunno-block > p
+  font-family $arial
+  font-size 12px
+.dunno-block > h4
+  margin-top 12px
+  font-size 20px
+  font-weight 800
+  text-transform uppercase
+  color $black
+  font-family $opensans
+.image-dunno
+  width 70px
+  height 70px
+  margin 0 auto
+  overflow hidden
+  border-radius 50%
+  background $silver
+  text-align center
+
+
+  
+.icon-line-top,
+.icon-line-bottom
+  margin 0 auto
+.icon-line-top
+  margin-top 67px
+  margin-bottom 40px
+.icon-line-bottom
+  margin-top 40px
+  margin-bottom 67px
+
+.words
+  font-family $opensans
+  text-align center
+  text-transform uppercase
+  p
+    font-size 18px
+  h2
+    font-size 30px
+    font-weight 400!important
+.featured-works,
+.latest-posts,
+.ft-slider
+  margin-top 30px;
+
+
+// featured-works SlIDER
+
+.slick-slide, .lp-block
+  width 270px
+  height 230px
+  margin-right 30px
+  margin-bottom 63px
+  position relative
+.icon-cross
+  position absolute
+  display none
+
+.lp-block:hover .icon-cross
+  display block
+  top 74px
+  left 115px
+.ft-slider div a:hover .icon-cross
+  display block
+  top 95px
+  left 115px
+
+/* Arrows */
+.slick-prev,
+.slick-next
+  // font-size 20px
+  line-height 0
+  position absolute
+  display block
+  width 21px
+  height 21px
+  cursor pointer
+  color transparent
+  border none
+  outline none
+  background black
+  border-radius 50%
+// .slick-prev:focus,
+// .slick-next:focus
+.slick-prev:hover,
+.slick-next:hover,
+    background: $red
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+
+    opacity: 1;
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+
+    opacity: .25;
+
+.slick-prev:before,
+.slick-next:before
+
+    color: white;
+
+.slick-prev
+  top -36px
+  right: 23px
+    
+.slick-prev:before
+  display block
+  content: "";
+  background-image: url(../images/sprite.png);
+  background-position: -106px -2px;
+  width: 5px;
+  height: 9px;
+  margin-top -4px
+  margin-left -3px
+// }
+
+  // content: '<' url('../images/arrow-left.png')
+
+.slick-next
+  right: 0px
+  top -36px
+
+.slick-next:before
+  // content: '>'
+  display block
+  content: "";
+  background-image: url(../images/sprite.png);
+  background-position: -101px -2px;
+  width: 5px;
+  height: 9px;
+  margin-top -4px
+// featured-works SlIDER
+
+
+.ft-blocklg
+  width 570px
+  margin-right 30px
+  float left
+.ft-blocklg 
+  > h4
+    font-size 21px
+    font-weight 800
+    font-family $opensans
+    text-transform uppercase
+  p
+    color $black
+    font-family $arial
+    line-height 18px
+    font-size 12px
+  ul
+    margin-top 10px
+    margin-bottom 11px
+  ul
+    li
+      position relative
+      font-size 12px
+      line-height 18px
+      color #ccc
+      list-style none
+      margin-left 20px
+      font-family $arial
+      
+
+.readmore,.lp-block .short-info .readmore
+  color $red
+  text-decoration none
+  &:hover
+    color $black
+.lt-news
+  margin-left 570px
+.lt-news,.latest-posts,.featured-works,.block-footer
+  h4
+    font-size 21px
+    font-weight 800
+    font-family $opensans
+    text-transform uppercase
+.lt-news-block,
+.block-footer
+  width 270px
+  float left
+.lt-news-block h5,
+.lp-block h5
+  color $red
+  font-size 17px
+  line-height 18px
+  text-transform uppercase
+  font-family $opensans
+  font-weight 400
+.date
+  width 70px
+  height 70px
+  border-radius 50%
+  background $silver
+  text-align center
+  float left
+  margin-right 12px
+  p
+    font-family $opensans
+    font-size 12px
+  .year
+    margin-top -6px
+    display inline-block
+    font-size 17px
+.date .ddmm
+  margin-top 19px
+  display inline-block
+
+
+
+.lt-news-title .info
+  margin-top 11px
+.lt-news-title
+  width 188px
+  float left
+.lt-news-title a:hover,.lp-block a:hover
+  color $red
+.lt-news-title a,
+.info,.lp-block .info, 
+.lp-block a
+    font-style italic
+    color #9d9d9d
+    text-decoration none
+    font-family $arial
+    font-size 12px
+.short-info
+    color $black
+    display inline-block
+    margin-top 12px
+    text-decoration none
+    font-family $arial
+    font-size 12px
+
+
+.lp-block h5
+  margin-top 15px
+.lp-block .info,
+.lp-block .short-info
+  margin-top 10px
+
+.latest-posts
+  clear both
+
+.icon-black-line
+  width 100%
+  height 4px
+  background $black
+.block-footer
+  margin-top 40px
+  margin-right 30px
+.block-footer h4
+  margin-bottom 24px
+.block-footer input
+  width 270px;
+  height 28px
+  background $silver
+  border none
+  margin-bottom 3px;
+  text-indent 10px
+.block-footer textarea
+  text-indent 10px
+  line-height 28px
+::-webkit-input-placeholder
+  color $black
+  // padding-left 10px
+  
+textarea
+  background $silver
+  width 270px
+  resize none
+  height 113px
+  border none
+  
+::-webkit-input-placeholder,
+textarea
+  font-family $arial
+  font-style italic
+  font-size 12px
+button
+  padding 10px
+  font-size 11px
+  font-family $opensans
+  font-weight 800
+  color #fff
+  text-transform uppercase
+  border none
+  border-radius 3px;
+  margin-right 0px
+  cursor pointer
+  background $black
+  &:hover
+    background $red
+button.clear
+  margin-right -1px
+.testimonials
+  font-size 12px
+  line-height 16px
+  font-family $arial
+.icon-speech-bubble
+  margin 8px 10px 5px 3px 
+  float left
+.icon-speech-bubble svg
+  width 15px
+  height 13px
+  fill #d00b01
+  
+  
+.testimonials-info
+  margin-top 9px
+.testimonials-info a
+  font-size 12px
+  font-family $arial
+  color $red
+  text-decoration none
+  font-style italic
+.divider-da
+  width 270px
+  height 1px
+  background #dadada
+  margin-top 16px
+  margin-bottom 15px
+.block-footer.m
+  margin-right 0px
+  
+.thumbnail
+  width 63px
+  height 63px
+  margin-right 6px
+  margin-bottom 6px
+  float left
+.thumbnail:nth-child(4n+4)
+    margin-right 0px
+// #flickr_badge_wrapper center
+//   display none
+.bottom
+  clear both
+  height 166px
+  width 100%
+  margin-top 41px
+  background #1e1e1e
+.center,
+.featured-works,
+.latest-posts
+  width 1170px
+  margin 0 auto
+.nav-bottom
+  clear both
+  float right
+  margin-top 22px;
+.nav-bottom a
+  color: #444444
+  font-size 14px
+  font-weight 800
+  margin-right 18px;
+  text-decoration none
+  text-transform uppercase
+  font-family $opensans
+  &:hover
+    color #5f5f5f
+.nav-bottom a:last-child
+    margin-right 0px
+// .icon-logo-bottom
+//   margin-top 29px
+//   float left
+.logo-bottom
+  margin-top: 7px;
+  width 285px
+  height 65px
+.logo-bottom
+  color #303030
+.logo-bottom .logo > .jessicawhite > span
+    color #303030
+.logo-bottom .logo > .professional
+  color #303030
+    
+.copyright
+  color #444444
+  font-size 12px
+  margin-top 34px
+  font-family $arial
+  clear both
+  float left
+.social-search
+  float right
+.search-bottom
+   color #1e1e1e
+   font-size 12px
+.social-bottom
+  float left
+.social-bottom > div
+  margin-top 7px
+  display inline-block
+.search-bottom
+  float left
+.search-bottom input
+  // padding-left 10px
+  text-indent 9px
+  width 218px
+  height 28px
+  background #393939
+  border none
+  border-radius 3px
+  font-style italic
+  color #1e1e1e
+// .social-bottom ::-webkit-input-placeholder
+
+.social-bottom .search-bottom
+  text-align right
+  // width: 100px;
+  // float right
+  // height: 150px;
+  // background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI2MDAuMTM3cHgiIGhlaWdodD0iMTYuMDA0cHgiIHZpZXdCb3g9IjAgMCA2MDAuMTM3IDE2LjAwNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjAwLjEzNyAxNi4wMDQiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cjxwb2x5Z29uIGZpbGw9IiMxQzM2NjQiIHBvaW50cz0iNjAwLjEzNywxNi4wMDQgNjAwLjEzNywwIDAsMTYuMDA0ICIvPgo8L3N2Zz4=) 
+  // background url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4LjkxIDE1LjAzIj4KICA8cGF0aCBkPSJNLTAuMDA4LDcuMDQ4IEwxLjk0OSw3LjA0OCBMMS45NDksMTUuMDQ0IEw0Ljk4NywxNS4wNDQgTDQuOTg3LDcuMDQ4IEw3LjUyMiw3LjA0OCBMOC4wODIsNS4wMjYgTDQuOTg3LDUuMDI2IEw0Ljk4NywzLjczOSBDNC45ODcsMy4xNjMgNC45OTgsMi43NDIgNS4yMDgsMi41MzkgQzUuNDE3LDIuMzM2IDUuOTc3LDIuMDE2IDYuNDU5LDIuMDE2IEw4LjAzOCwyLjA0NSBMOC45MTAsMC4wMDAgTDYuMDU5LDAuMDIzIEM2LjA1OSwwLjAyMyA0LjA1NiwwLjEzOSAzLjQ1MiwwLjQzNSBDMi44NDcsMC43MzAgMi41MTMsMS4wODEgMi4yODcsMS41NTEgQzIuMDYyLDIuMDIxIDEuOTQ5LDIuNzMyIDEuOTQ5LDMuNjg2IEwxLjk0OSw0Ljk5NSBMLTAuMDA4LDUuMDI2IEwtMC4wMDgsNy4wNDggWiIgY2xhc3M9ImNscy0xIi8+Cjwvc3ZnPg==)no-repeat center center
+
+.facebook svg,
+.vimeo svg,
+.thumbler svg, 
+.twitter svg,
+.delicious svg
+  fill #393939
+  &:hover
+    fill #5b5b5b
+    
+.facebook svg
+  width 9px
+  height 16px
+  margin-right 18px
+.vimeo svg
+  width 16px
+  height 16px
+  margin-right 18px
+.thumbler svg
+  width 15px
+  height 16px
+  margin-right 15px
+.twitter svg
+  width 21px
+  height 15px
+  margin-right 18px
+.social-search .twitter
+  position relative
+  
+.social-search .facebook:hover .bubble,
+.social-search .vimeo:hover .bubble,
+.social-search .thumbler:hover .bubble,
+.social-search .twitter:hover .bubble,
+.social-search .delicious:hover .bubble
+  display block
+
+.social-search .facebook .bubble-facebook
+  top: -42px;
+  left: -30px;
+  display none
+.social-search .vimeo .bubble-vimeo
+  top: -42px;
+  left: -15px;
+  display none
+.social-search .thumbler .bubble-thumbler
+  top: -42px
+  left: -30px
+  display none
+.social-search .twitter .bubble
+  top: -42px;
+  left: -16px;
+  display none
+.social-search .delicious .bubble-delicious
+  top: -42px;
+  left: -27px;
+  display none
+.delicious svg
+  width 14px
+  height 14px
+  margin-right 22px
+.left-block-bottom
+  float left
+.right-block-bottom
+  width 570px
+  margin-top 54px
+  float right
+
+
+// bubble box
+.bubble-box
+  margin 0px;
+  padding 0px
+  position absolute
+.bubble
+  height 21px
+  line-height 21px
+  position absolute
+  padding-left 7px
+  padding-right 7px
+  margin 1em 0 3em
+  background #393939
+  border-radius:2px;
+  text-transform uppercase
+  font-family $opensans
+  font-weight 400
+  font-size 10px
+.bubble.right {
+  text-align center
+}
+/* creates triangle */
+.bubble-facebook:after,
+.bubble-twitter:after,
+.bubble-vimeo:after,
+.bubble-delicious:after,
+.bubble-thumbler:after
+  content:""
+  position:absolute
+  bottom:-5px
+  border-width:7px 4px 0
+  border-style:solid
+  border-color:#393939 transparent;
+  display:block
+  width:0
+.bubble-facebook:after
+  left 30px 
+.bubble-vimeo:after
+  left 19px  
+.bubble-twitter:after
+  left 25px 
+.bubble-thumbler:after
+  left 30px 
+.bubble-delicious:after
+  left 30px
+.facebook,
+.twitter,
+.vimeo,
+.delicious,
+.thumbler
+  position relative
+
+.rd-image
+  width 70px
+  height 70px
+.icon-block-one
+  background url(../images/icons/heart.png)no-repeat center center
+.icon-block-two
+  background url(../images/icons/globe.png)no-repeat center center
+.icon-block-three
+  background url(../images/icons/star.png)no-repeat center center
+.icon-block-four
+  background url(../images/icons/plane.png)no-repeat center center
+  
+
+.image-dunno:hover
+  background $red
+.image-dunno:hover .icon-block-one
+  background url(../images/icons/heart-hover.png)no-repeat center center
+.image-dunno:hover .icon-block-two
+  background url(../images/icons/globe-hover.png)no-repeat center center
+.image-dunno:hover .icon-block-three
+  background url(../images/icons/star-hover.png)no-repeat center center
+.image-dunno:hover .icon-block-four
+  background url(../images/icons/plane-hover.png)no-repeat center center
+  
+
+.icon-clock-li,
+.icon-star-li,
+.icon-persone-li
+  top 2px
+.icon-camera-li
+  top 3px
+.icon-clock-li,
+.icon-star-li,
+.icon-camera-li,
+.icon-qr-li,
+.icon-persone-li
+  position absolute
+  left -20px
+.ft-blocklg span
+  width 12px
+  height 12px
+.tweets-box
+  font-size 12px
+  font-family $arial
+  line-height 16px
+  margin-top 14px
+  border-bottom 1px solid #eaeaea
+.tweets-box p
+  margin-bottom 17px
+  
+.tweets-box span.tweeter-logo
+  display: block;
+  float: left;
+  margin-top 4px
+  margin-right 11px
+.tweets-box svg
+  width 19.56px
+  height 14.97px
+  margin-top 2px
+  fill $red
+.block-footer .tweets-box:last-child
+  border-bottom none;
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

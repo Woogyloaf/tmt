@@ -1,0 +1,83 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-arrow-left {
+  background-image: url(sprite.png);
+  background-position: -106px -2px;
+  width: 5px;
+  height: 9px;
+}
+.icon-arrow-right {
+  background-image: url(sprite.png);
+  background-position: -101px -2px;
+  width: 5px;
+  height: 9px;
+}
+.icon-camera-li {
+  background-image: url(sprite.png);
+  background-position: -89px -2px;
+  width: 12px;
+  height: 10px;
+}
+.icon-clock-li {
+  background-image: url(sprite.png);
+  background-position: -77px -2px;
+  width: 12px;
+  height: 13px;
+}
+.icon-cross {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 39px;
+}
+.icon-line-bottom {
+  background-image: url(sprite.png);
+  background-position: -40px -1px;
+  width: 1170px;
+  height: 1px;
+}
+.icon-line-top {
+  background-image: url(sprite.png);
+  background-position: -40px 0px;
+  width: 1170px;
+  height: 1px;
+}
+.icon-persone-li {
+  background-image: url(sprite.png);
+  background-position: -53px -2px;
+  width: 12px;
+  height: 13px;
+}
+.icon-qr-li {
+  background-image: url(sprite.png);
+  background-position: -65px -2px;
+  width: 12px;
+  height: 13px;
+}
+.icon-slider-arrow-next {
+  background-image: url(sprite.png);
+  background-position: -25px -39px;
+  width: 25px;
+  height: 44px;
+}
+.icon-slider-arrow-previous {
+  background-image: url(sprite.png);
+  background-position: 0px -39px;
+  width: 25px;
+  height: 44px;
+}
+.icon-star-li {
+  background-image: url(sprite.png);
+  background-position: -40px -2px;
+  width: 13px;
+  height: 13px;
+}
