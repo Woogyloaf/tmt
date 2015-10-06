@@ -1,9 +1,3 @@
-# JL Gulp Starter 0.2
-
-jlGulp starter is my personal front-end framework using Gulp, Node, Sass, Susy, Breakpoint, SourceMaps, Browser-Sync, Autoprefixer and Uglify / Concat. This is a complete rewrite from version 0.1.
-
-**Prior Ruby and Compass dependency have been removed and no longer required the use of any Ruby.**
-
 ## Install Packages
 
 After cloning the project to your computer run the following command in your terminal to install all required node and bower packages.
