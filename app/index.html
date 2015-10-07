@@ -367,7 +367,10 @@
 		function resetFields() {
 		    document.getElementById("contact-form").reset();
 		};
-		$('.slider').slick();
+		$('.slider').slick({
+			autoplay: true,
+			autoplaySpeed: 3000
+		});
 
 		$('.ft-slider, .latest-posts-slider').slick({
 		  variableWidth: true,
